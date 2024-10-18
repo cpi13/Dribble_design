@@ -1,6 +1,5 @@
 import 'package:dribble_design/utils/excercises.dart';
 import 'package:flutter/material.dart';
-
 import '../utils/emotion_face.dart';
 
 class HomePage extends StatefulWidget {
@@ -43,22 +42,22 @@ class _HomePageState extends State<HomePage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Hey, There!!",
+                          const Text("Hey, There!!",
                             style: TextStyle(color: Colors.white,
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold),),
-                          SizedBox(height: 8,),
+                          const SizedBox(height: 8,),
                           Text('2 jan, 2020',style: TextStyle(color: Colors.blue[200]),)
                         ],
                       ),
                       //Notification
                       Container(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
                               color: Colors.blue[600],
                               borderRadius: BorderRadius.circular(12)
                           ),
-                          child: Icon(Icons.notifications,color: Colors.white,))
+                          child: const Icon(Icons.notifications,color: Colors.white,))
                     ],
                   ),
                   const SizedBox(height: 20,),
@@ -141,17 +140,17 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 25,),
             Expanded(child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(25),topRight: Radius.circular(25)),
+                borderRadius: const BorderRadius.only(topLeft: Radius.circular(25),topRight: Radius.circular(25)),
                   color: Colors.grey[200],
               ),
-              padding: EdgeInsets.all(25),
+              padding: const EdgeInsets.all(25),
               child: Column(
                 children: [
                   //excercise  heading
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Excercises",
+                      Text("Exercises",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold
@@ -159,26 +158,26 @@ class _HomePageState extends State<HomePage> {
                       Icon(Icons.more_horiz)
                     ],
                   ),
-                  //list view of excercises
-                  SizedBox(height: 20,),
+                  //list view of exercises
+                  const SizedBox(height: 20,),
                   Expanded(
                     child: ListView(
                       children: const [
                         Excercises(icon: Icons.favorite,
                         name: "Speaking Skills",
-                        numbers: "20 Excercises",
+                        numbers: "20 Exercises",
                         color: Colors.orange,),
                         Excercises(icon: Icons.person,
                           name: "Reading Skills",
-                          numbers: "7 Excercises",
+                          numbers: "7 Exercises",
                         color: Colors.blue,),
                         Excercises(icon: Icons.star,
                           name: "Writing Skills",
-                          numbers: "10 Excercises",
+                          numbers: "10 Exercises",
                         color: Colors.purpleAccent,),
                         Excercises(icon: Icons.verified,
                           name: "Verbal Skills",
-                          numbers: "80 Excercises",
+                          numbers: "80 Exercises",
                           color: Colors.cyan,),
 
                       ],
